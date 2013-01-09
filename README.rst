@@ -1,8 +1,8 @@
-=============================
 Django Rest Framework Msgpack
 =============================
 
 .. image:: https://api.travis-ci.org/juanriaza/django-rest-framework-msgpack.png?branch=master
+        :target: https://travis-ci.org/juanriaza/django-rest-framework-msgpack
 
 :Version: 1.0.0
 :Author: `Juan Riaza <http://juanriaza.com>`_
@@ -16,14 +16,18 @@ This package provides `MessagePack <http://msgpack.org>`_ support for `Django RE
 How to install
 ==============
 
-Install using ``pip``::
+Install using ``pip``:
+
+.. code-block:: bash
 
     $ pip install djangorestframework-msgpack
 
-...or clone the project from github::
+...or clone the project from github:
+
+.. code-block:: bash
 
     $ git clone git@github.com:juanriaza/django-rest-framework-msgpack.git
-    $ cd django-rest-framework
+    $ cd django-rest-framework-msgpack
     $ pip install -r requirements.txt
 
 How use it?
@@ -68,5 +72,6 @@ Changelog
 
 1.0.0
 -----
+**6th Jan 2012**
 
 * Initial release
