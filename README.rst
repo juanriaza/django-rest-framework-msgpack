@@ -4,7 +4,7 @@ Django Rest Framework Msgpack
 .. image:: https://api.travis-ci.org/juanriaza/django-rest-framework-msgpack.png?branch=master
         :target: https://travis-ci.org/juanriaza/django-rest-framework-msgpack
 
-:Version: 1.0.0
+:Version: 1.0.1
 :Author: `Juan Riaza <http://juanriaza.com>`_
 
 Overview
@@ -69,6 +69,12 @@ To run the tests against the current environment::
 
 Changelog
 =========
+
+1.0.1
+-----
+**15th Jan 2012**
+
+* The parser now support streams (by Sébastien Béal)
 
 1.0.0
 -----
