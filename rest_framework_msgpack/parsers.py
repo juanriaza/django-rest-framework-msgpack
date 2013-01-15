@@ -36,7 +36,7 @@ class MessagePackParser(BaseParser):
 
     def parse(self, stream, media_type=None, parser_context=None):
         try:
-            return msgpack.unpackb(stream,
+            return msgpack.load(stream,
                 use_list=True,
                 object_hook=MessagePackDecoder().decode)
         except Exception, exc:
