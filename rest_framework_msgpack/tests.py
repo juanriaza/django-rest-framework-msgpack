@@ -1,5 +1,6 @@
 import decimal
 import datetime
+from StringIO import StringIO
 from django.test import TestCase
 from rest_framework_msgpack.renderers import MessagePackRenderer
 from rest_framework_msgpack.parsers import MessagePackParser
@@ -31,7 +32,7 @@ class MessagePackRendererTests(TestCase):
         parser = MessagePackParser()
 
         content = renderer.render(obj, 'application/msgpack')
-        data = parser.parse(content)
+        data = parser.parse(StringIO(content))
         self.assertEquals(obj, data)
 
     def test_datetime(self):
@@ -41,7 +42,7 @@ class MessagePackRendererTests(TestCase):
         parser = MessagePackParser()
 
         content = renderer.render(obj, 'application/msgpack')
-        data = parser.parse(content)
+        data = parser.parse(StringIO(content))
         self.assertEquals(obj, data)
 
     def test_date(self):
@@ -51,7 +52,7 @@ class MessagePackRendererTests(TestCase):
         parser = MessagePackParser()
 
         content = renderer.render(obj, 'application/msgpack')
-        data = parser.parse(content)
+        data = parser.parse(StringIO(content))
         self.assertEquals(obj, data)
 
     def test_time(self):
@@ -61,7 +62,7 @@ class MessagePackRendererTests(TestCase):
         parser = MessagePackParser()
 
         content = renderer.render(obj, 'application/msgpack')
-        data = parser.parse(content)
+        data = parser.parse(StringIO(content))
         self.assertEquals(obj, data)
 
     def test_decimal(self):
@@ -71,5 +72,5 @@ class MessagePackRendererTests(TestCase):
         parser = MessagePackParser()
 
         content = renderer.render(obj, 'application/msgpack')
-        data = parser.parse(content)
+        data = parser.parse(StringIO(content))
         self.assertEquals(obj, data)
