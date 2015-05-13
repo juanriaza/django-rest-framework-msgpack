@@ -48,9 +48,9 @@ version = get_version('rest_framework_msgpack')
 if sys.argv[-1] == 'publish':
     os.system("python setup.py sdist upload")
     args = {'version': version}
-    print "You probably want to also tag the version now:"
-    print "  git tag -a %(version)s -m 'version %(version)s'" % args
-    print "  git push --tags"
+    print("You probably want to also tag the version now:")
+    print("  git tag -a %(version)s -m 'version %(version)s'" % args)
+    print("  git push --tags")
     sys.exit()
 
 
