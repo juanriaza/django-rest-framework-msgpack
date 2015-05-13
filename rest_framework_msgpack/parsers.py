@@ -38,6 +38,7 @@ class MessagePackParser(BaseParser):
         try:
             return msgpack.load(stream,
                                 use_list=True,
+                                encoding="utf-8",
                                 object_hook=MessagePackDecoder().decode)
-        except Exception, exc:
+        except Exception as exc:
             raise ParseError('MessagePack parse error - %s' % unicode(exc))
