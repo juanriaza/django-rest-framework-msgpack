@@ -27,8 +27,10 @@ class MessagePackRenderer(BaseRenderer):
 
     media_type = 'application/msgpack'
     format = 'msgpack'
+    render_style = 'binary'
+    charset = None
 
-    def render(self, data, accepted_media_type=None, renderer_context=None):
+    def render(self, data, media_type=None, renderer_context=None):
         """
         Renders *obj* into serialized MessagePack.
         """
