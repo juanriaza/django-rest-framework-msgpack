@@ -76,13 +76,13 @@ Changelog
 
 * Match current DRF api (by V.Korol - @vakorol)
 * `python-dateutil` unpinned version (by Justin Whitehead - @whitej125)
-* Python 3 compatibility (by @cecedille1)
+* Python 3 compatibility (by Roberto Barreda @robertobarreda and @cecedille1)
 
 1.0.1
 -----
 **15th Jan 2012**
 
-* The parser now support streams (by Sébastien Béal)
+* The parser now support streams (by Sébastien Béal - @sebastibe)
 
 1.0.0
 -----
