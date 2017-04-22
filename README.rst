@@ -4,7 +4,7 @@ Django Rest Framework Msgpack
 .. image:: https://api.travis-ci.org/juanriaza/django-rest-framework-msgpack.png?branch=master
         :target: https://travis-ci.org/juanriaza/django-rest-framework-msgpack
 
-:Version: 1.0.1
+:Version: 1.0.2
 :Author: `Juan Riaza <http://juanriaza.com>`_
 
 Overview
@@ -69,6 +69,14 @@ To run the tests against the current environment::
 
 Changelog
 =========
+
+1.0.2
+-----
+**22th Apr 2017**
+
+* Match current DRF api (by V.Korol - @vakorol)
+* `python-dateutil` unpinned version (by Justin Whitehead - @whitej125)
+* Python 3 compatibility (by @cecedille1)
 
 1.0.1
 -----
